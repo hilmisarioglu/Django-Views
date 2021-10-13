@@ -20,6 +20,7 @@ def home(request):
     
     context = {
        'title' : 'clarusway',
-       'my_list':[2,3,4] 
+       'dict1' : {'title' : 'Hilmi'},
+       'my_list': [2,3,4] 
     }
     return render(request, 'app/home.html', context)
